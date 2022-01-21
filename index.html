@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Can you beat the sorter?</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <div id = "title">
+    Can You Beat the Sorter?
+  </div>
+	<div id="main">
+    <i id = "help" class="fas fa-question invis"> Help</i>
+		<div id="barholder">
+			<div class="numberholder" id="1">1</div>
+			<div class="numberholder" id="2">2</div>
+			<div class="numberholder" id="3">3</div>
+			<div class="numberholder" id="4">4</div>
+			<div class="numberholder" id="5">5</div>
+			<div class="numberholder" id="6">6</div>
+			<div class="numberholder" id="7">7</div>
+			<div class="numberholder" id="8">8</div>
+			<div class="numberholder" id="9">9</div>
+			<div class="numberholder" id="10">10</div>
+			<div class="invis">Human sorting list</div>
+		</div>
+		<div id="sorted"> Not Sorted</div>
+		<div id="time"> 0 seconds </div>
+		<div id="botbarholder">
+			<div class="botnumberholder" id="b1">1</div>
+			<div class="botnumberholder" id="b2">2</div>
+			<div class="botnumberholder" id="b3">3</div>
+			<div class="botnumberholder" id="b4">4</div>
+			<div class="botnumberholder" id="b5">5</div>
+			<div class="botnumberholder" id="b6">6</div>
+			<div class="botnumberholder" id="b7">7</div>
+			<div class="botnumberholder" id="b8">8</div>
+			<div class="botnumberholder" id="b9">9</div>
+			<div class="botnumberholder" id="b10">10</div>
+			<div class="invis">Robot sorting list</div>
+		</div>
+		<button id = "start">Start</button>
+
+<select id = "chosensort">
+  <option value="bubblesort">Bubblesort</option>
+  <option value="insertionsort">insertionsort</option>
+  <option value="selectionsort">selectionsort</option>
+  <option value="heapsort">heapsort</option>
+  <option value="shellsort">shellsort</option>
+   <option value="bogosort">bogosort</option>
+ <option value="gnomesort">gnomesort</option>
+  <option value="oddevensort">oddevensort</option>
+</select>
+<select id = "difficulty">
+  <option value="easy">easy</option>
+  <option value="hard">hard</option>
+ 
+</select>
+<div id = "descriptionholder"  class = "invis" > A very slow sorting algorithm. This compares 2 adjectent numbers and swaps them if they are in the wrong order. It has O(n^2) steps
+</div>
+</div>
+<div id = "helpbox" class = "invis">
+  This is "Can You Beat the Sorter?", a game I made to teach my brother about dif
+  ferent sorting algorithms. In this game, you choose a sorting algorithm and a difficulty to face off agaisnt.
+  After pressing the green start button, you must sort the red list before the sorting algortihm of your choice sorts the blue list.
+  Hopefully this game teaches you about the exciting field of sorting algorithms. 
+</div>
+	<script src="script.js">
+	</script>
+      <script src="https://kit.fontawesome.com/c5b223ec70.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
